@@ -117,31 +117,31 @@ export function PaymentPage() {
         <div className="space-y-6">
           {/* Earnings Summary */}
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="bg-dark-800 p-6 rounded-lg shadow-md border border-dark-700">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-gray-600">Total Earnings</p>
-                  <p className="text-2xl font-bold text-green-600">${totalEarnings.toFixed(2)}</p>
+                  <p className="text-sm font-medium text-gray-400">Total Earnings</p>
+                  <p className="text-2xl font-bold text-white">${totalEarnings.toFixed(2)}</p>
                 </div>
                 <DollarSign className="h-8 w-8 text-green-600" />
               </div>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="bg-dark-800 p-6 rounded-lg shadow-md border border-dark-700">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-gray-600">Pending</p>
-                  <p className="text-2xl font-bold text-yellow-600">${pendingAmount.toFixed(2)}</p>
+                  <p className="text-sm font-medium text-gray-400">Pending</p>
+                  <p className="text-2xl font-bold text-white">${pendingAmount.toFixed(2)}</p>
                 </div>
                 <Clock className="h-8 w-8 text-yellow-600" />
               </div>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="bg-dark-800 p-6 rounded-lg shadow-md border border-dark-700">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-gray-600">This Month</p>
-                  <p className="text-2xl font-bold text-blue-600">$75.50</p>
+                  <p className="text-sm font-medium text-gray-400">This Month</p>
+                  <p className="text-2xl font-bold text-white">$75.50</p>
                 </div>
                 <CheckCircle className="h-8 w-8 text-blue-600" />
               </div>
