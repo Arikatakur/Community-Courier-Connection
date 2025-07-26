@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { MapPin, Clock, CheckCircle, Truck, Package, Phone, MessageCircle, Navigation } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { MapPin, Clock, CheckCircle, Truck, Phone, MessageCircle, Navigation } from 'lucide-react';
 
 export function TrackingPage() {
   const [activeDelivery, setActiveDelivery] = useState({
@@ -14,7 +14,7 @@ export function TrackingPage() {
     dropoffAddress: '456 Business Ave, San Francisco, CA 94105'
   });
 
-  const [currentStep, setCurrentStep] = useState(2);
+  // const [currentStep, setCurrentStep] = useState(2);
 
   const steps = [
     { id: 1, title: 'Request Accepted', description: 'Traveler accepted your delivery request', completed: true, timestamp: '12:45 PM' },

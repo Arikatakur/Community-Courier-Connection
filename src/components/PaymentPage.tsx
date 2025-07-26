@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { CreditCard, DollarSign, Clock, CheckCircle, X, Plus, Shield } from 'lucide-react';
 import type { Payment } from '../types';
 
@@ -149,8 +149,8 @@ export function PaymentPage() {
           </div>
 
           {/* Recent Activity */}
-          <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Payments</h3>
+          <div className="bg-dark-800 p-6 rounded-lg shadow-md border border-dark-700">
+            <h3 className="text-lg font-semibold text-gray-400 mb-4">Recent Payments</h3>
             <div className="space-y-3">
               {recentPayments.slice(0, 5).map((payment) => (
                 <div key={payment.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-md">

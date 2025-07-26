@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 import { Package, Truck, Users, Star, TrendingUp, Clock, MapPin, DollarSign } from 'lucide-react';
 import type { User } from '../types';
 
 interface DashboardProps {
   user?: User;
   onGetStarted?: () => void;
-}
+} 
 
 export function Dashboard({ user, onGetStarted }: DashboardProps) {
   if (!user) {
